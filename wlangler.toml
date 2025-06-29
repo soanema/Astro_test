@@ -1,4 +1,0 @@
-name = "my-pages-app"
-pages_build_output_dir = "./public"
-[vars]
-HUGO_VERSION="v0.124.1+extended"

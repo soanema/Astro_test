@@ -1,0 +1,23 @@
+---
+const platform = "github";
+const username = "soanema";
+import Social from "./Social.astro";
+---
+
+<footer>
+  <p>
+    私のプロジェクトについて詳しくは<a
+      href={`https://www.${platform}.com/${username}`}>{platform}</a
+    >をご確認ください！
+  </p>
+  <Social platform="twitter" username="soanema0701" />
+  <Social platform="github" username={`${username}`}/>
+  <Social platform="youtube" username="@soanema" />
+</footer>
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>

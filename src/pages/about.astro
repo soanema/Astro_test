@@ -21,22 +21,10 @@ const goal = 3;
 const skillColor = "navy-blue";
 const fontWeight = "bold";
 const textCase = "uppercase";
-import '../styles/global.css';
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <Navigation />
-    <h1>私のAstroサイト</h1>
-    <h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
     <h2>... そして私の新しいAstroサイトについて！</h2>
 
     <p>
@@ -82,6 +70,4 @@ import Footer from "../components/Footer.astro";
         <p>My goal is not 3 days. 3日が目標ではありません。</p>
       )
     }
-    <Footer />
-  </body>
-</html>
+</BaseLayput>
